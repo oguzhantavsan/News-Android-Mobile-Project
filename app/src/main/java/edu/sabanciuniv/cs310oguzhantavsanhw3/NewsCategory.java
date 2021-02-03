@@ -1,0 +1,34 @@
+package edu.sabanciuniv.cs310oguzhantavsanhw3;
+
+import android.graphics.Bitmap;
+
+import java.io.Serializable;
+import java.util.Date;
+
+
+public class NewsCategory implements Serializable{
+
+    private String name;
+    private int id;
+
+    public NewsCategory(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+}
